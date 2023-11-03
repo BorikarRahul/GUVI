@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Callback Hell</h1>
+</body>
+<script>
+
+    let print = document.createElement('h2');
+    let body = document.querySelector('body');
+    // print.innerText = "Happy Independence Day";
+
+    function printNumbers(num, callback) {
+        setTimeout(() => {
+            console.log(num);
+            callback();
+        }, 1000)
+    }
+
+    printNumbers(10, function () {
+        print.innerText = "10";
+        body.append(print);
+        printNumbers(9, function () {
+            print.innerText = "9";
+            body.append(print);
+            printNumbers(8, function () {
+                print.innerText = "8";
+                body.append(print);
+                printNumbers(7, function () {
+                    print.innerText = "7";
+                    body.append(print);
+                    printNumbers(6, function () {
+                        print.innerText = "6";
+                        body.append(print);
+                        printNumbers(5, function () {
+                            print.innerText = "5";
+                            body.append(print);
+                            printNumbers(4, function () {
+                                print.innerText = "4";
+                                body.append(print);
+                                printNumbers(3, function () {
+                                    print.innerText = "3";
+                                    body.append(print);
+                                    printNumbers(2, function () {
+                                        print.innerText = "2";
+                                        body.append(print);
+                                        printNumbers(1, function () {
+                                            print.innerText = "1";
+                                            body.append(print);
+                                            printNumbers(0, function () {
+                                                print.innerText = "Happy Independence Day";
+                                                body.append(print);
+                                            })
+                                            console.log("Happy Independence Day");
+                                        })
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
+            })
+        })
+    })
+
+
+</script>
+
+</html>
