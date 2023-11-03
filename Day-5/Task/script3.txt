@@ -1,0 +1,61 @@
+In JavaScript, window, screen, and document are three distinct objects that represent different aspects of the browser environment. Here's a brief explanation of the differences between them:
+-------------------------------------------------------------------------------
+
+window Object:
+
+The window object represents the browser window or the global JavaScript context for the current web page.
+
+It provides access to various properties and methods related to the browser window, including features like opening and closing windows, setting timeouts, and more.
+
+Global variables and functions are attached to the window object, so you can access them globally in your JavaScript code.
+
+
+
+
+window.alert("Hello, world!"); 
+// ^ Displays an alert dialog in the browser window
+
+
+------------------------------------------------------------------------------
+
+
+
+screen Object:
+
+The screen object represents the user's screen or display.
+It provides information about the user's screen size, resolution, and other display-related properties.
+
+You can use the screen object to create responsive designs and adjust content based on the user's screen.
+
+
+
+console.log("Screen width: " + screen.width); 
+// ^ Outputs the screen width
+
+-------------------------------------------------------------------------------
+
+
+document Object:
+
+The document object represents the web page itself or the Document Object Model (DOM) of the web page.
+
+It provides access to the structure and content of the web page, allowing you to manipulate HTML elements, change styles, and respond to user interactions.
+The document object is commonly used to interact with and modify the content of a web page using JavaScript.
+
+
+
+var heading = document.getElementById("myHeading"); 
+// ^ Retrieves an HTML element with the ID "myHeading"
+heading.innerHTML = "New Heading"; 
+// ^ Changes the text content of the heading element
+
+
+-------------------------------------------------------------------------------
+
+In summary, 
+
+> window is the global context representing the browser window, 
+> screen represents display-related information, 
+> document represents the web page's structure and content. 
+
+These objects serve different purposes and provide access to various aspects of the web browsing environment.

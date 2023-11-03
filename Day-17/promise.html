@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <span id="spanTag"></span>
+
+    <script>
+        var spanTag = document.getElementById("spanTag");
+        console.log(spanTag);
+
+        const p = new Promise(() => { });
+        console.log(p);
+
+
+        const p1 = new Promise((resolve, reject) => {
+            resolve("Hello");
+            reject("welcome");
+        })
+
+        console.log(p1);
+
+
+        var age = 20;
+        const p3 = new Promise((resolve, reject) => {
+            if (age > 20) {
+                resolve("Eligible");
+            } else {
+                reject("Not Eligible");
+            }
+        })
+        console.log(p3);
+    </script>
+</body>
+
+</html>

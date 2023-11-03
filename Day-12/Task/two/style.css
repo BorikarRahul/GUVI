@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: #1b1c1d;
+}
+.nav-link{
+    color: white !important;
+}
+.kazi{
+    /* margin: 100px 0; */
+    padding: 100px;
+    color: white;
+    text-align: center;
+}
+.poet{
+    padding: 100px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-between;
+}
+
+.icons{
+    text-align: center;
+}
+.middle{
+    padding: 100px;
+}
+
+.button-47:nth-child(1){
+    background-color: #e0e1e2;
+}
+.button-47:nth-child(2){
+    background-color: #db2828;
+}
+.button-47:nth-child(3){
+    background-color: #f2711c;
+}
+.button-47 {
+  align-items: center;
+  background: #bbb9b9;
+  border: 0 solid #E2E8F0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  color: #1A202C;
+  display: inline-flex;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 56px;
+  justify-content: center;
+  line-height: 24px;
+  overflow-wrap: break-word;
+  padding: 24px;
+  text-decoration: none;
+  width: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  touch-action: manipulation;
+  /* word-spacing: 10px; */
+}
+
+
+.poet-1{
+    width: 100%;
+    background-color: #1b1c1d;
+    text-align: center;
+    color: white;
+    padding: 80px;
+}
+
+.awards{
+    padding: 50px;
+    text-align: center;
+    position: relative;
+}
+.awards > i{
+
+    background-color: white;
+    position: absolute;
+    align-items: center;
+}
+h2 { 
+    display: flex; 
+    flex-direction: row; 
+    padding: 50px;
+} 
+  
+h2:before, 
+h2:after { 
+    content: ""; 
+    flex: 1 1; 
+    border-bottom: 2px solid #000; 
+    margin: auto; 
+} 
+  
+
+.awards_box{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.awards_box > div{
+    width: 21%;
+    overflow: hidden;
+    height: 140px;
+    text-align: left;
+    border: 1px solid gray;
+    padding: 1px;
+    /* word-spacing: -20px; */
+    letter-spacing: 0px;
+}
+.awards_box > div > p:nth-child(2){
+    color: rgba(0, 0, 0, 0.342);
+}
+
+.poems{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.poems > div{
+    
+    margin: 100px;
+}
+
+.footer{
+    padding: 70px;
+    height: 300px;
+    background-color: #1b1c1d;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer> div{
+    padding: 10px;
+    width: 22%;
+}
+span{
+    color: gray;
+}

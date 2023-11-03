@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+
+        // function getCities() {
+        //     let res = fetch("https://restcountries.com/v3.1/all");
+        //     res.catch();
+        //     let data = res.json();
+        //     console.log(data);
+        // }
+        // getCities();
+
+        // function getCities() {
+        //     fetch("https://restcountries.com/v3.1/all")
+        //         .then((res) => console.log(res))
+        // }
+        // function getCities() {
+        //     fetch("https://restcountries.com/v3.1/all")
+        //         .then((res) => res.json())
+        //         .then((data) => console.log(data[0].region));
+
+        // }
+
+        async function getCities() {
+            console.log("Getting cities...");
+            let res = await fetch("https://restcountries.com/v3.1/all")
+            let data = await res.json();
+            console.log(data);
+            console.log("Hello world!");
+        }
+
+        getCities();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let url = "https://raw.githubusercontent.com/Rajavasanthan/jsondata/master/pagenation.json"
+
+    async function getData() {
+        let res = await fetch(url);
+        let data = await res.json();
+        // console.log(data);
+        let getid = 1;
+
+        for (let i = ((getid - 1) * 10); i < getid * 10; i++) {
+            console.log(data[i]);
+        }
+
+    }
+    getData();
+</script>
+
+</html>

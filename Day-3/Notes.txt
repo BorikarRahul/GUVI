@@ -1,0 +1,2 @@
+1. Window and Document
+2. Objects and copy 

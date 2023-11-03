@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="colorElem" onmouseover="hover()">This the DIV Element</div>
+    <span id="data">
+        This is Para
+    </span>
+
+    <span id="coordinates"></span>
+    <h1>Click on h1 to get ClientX and ClientY</h1>
+</body>
+<script>
+
+    // Color a span/div element content when a user moves the mouse sdfgver the element.
+
+    function hover() {
+        document.getElementById("colorElem").style.backgroundColor = "green";
+    }
+
+    //---------------------------------------------------------
+
+
+    //Use prompt to read a value from user and display it in the span element.
+
+
+    // let content = prompt("Enter anything...");
+    if (content !== undefined || null || " ") {
+        document.getElementById("data").innerText = content;
+    }
+
+    //---------------------------------------------------------
+
+
+    //Display the mouse X and Y coordinates in a <span> tag when you click on a <h1> tag which contains a paragraph.
+
+    function showcoordinates(event) {
+        let xCoord = event.clientX;
+        let yCoord = event.clientY;
+        let coordinate = ``;
+    }
+
+
+
+    //---------------------------------------------------------
+
+
+</script>
+
+</html>
+
+
+
+
+<!--  From ChatGPT
+
+        <div>
+        <p> <span id="mouse" onmouseover="hover(this, 'red')" onmouseout="hover(this, 'green')"> Hello World! </span>
+            only span word is changing the color </p>
+    </div>
+</body>
+<script>
+    function hover(element, color) {
+        element.style.color = color;
+    }
+</script> -->

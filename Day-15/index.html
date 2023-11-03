@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <p class="ptag">Color a <span onmouseover="ptag(this, 'red')">span/div</span> element content when a user moves
+            the mouse
+            over the element</p>
+    </div>
+</body>
+<script>
+    let ptag = document.getElementsByTagName("span").innerText;
+
+
+</script>
+<script src="script.js"></script>
+
+</html>
+
+<!-- 
+    <body>
+    <div>
+        <span class="highlighted" onmouseover="changeColor(this, 'red')" onmouseout="changeColor(this, 'blue')">Hover
+            over me to change my color</span>
+    </div>
+
+    <script>
+        function changeColor(element, color) {
+            element.style.color = color;
+        }
+    </script>
+</body>
+ -->

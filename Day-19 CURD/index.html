@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+
+        let userUrl = "https://6541cd47f0b8287df1fee614.mockapi.io/users"
+
+        async function getUserData() {
+            let data = await fetch(userUrl);
+            let res = await data.json();
+            console.log(res);
+            console.table(res);
+        }
+
+        getUserData();
+
+    </script>
+</body>
+
+</html>

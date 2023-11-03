@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea name="TextCount" id="textCount" cols="30" rows="10" onchange="CharacterCount()"></textarea>
+    <span id="counting">0 Character</span>
+    <script>
+        function CharacterCount() {
+            document.getElementById("textCount").value;
+
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- 
+
+
+    <textarea id="textArea" rows="4" cols="50"></textarea>
+  <br>
+  <span id="charCount">Character count: 0</span>
+
+  <script>
+    const textArea = document.getElementById("textArea");
+    const charCount = document.getElementById("charCount");
+
+    // Add an input event listener to the textarea
+    textArea.addEventListener("input", function () {
+      const text = textArea.value;
+      const count = text.length;
+      charCount.textContent = `Character count: ${count}`;
+    });
+  </script>
+ -->
