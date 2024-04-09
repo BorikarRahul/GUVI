@@ -1,0 +1,3 @@
+Create React app using with pricing folder => npx Create-react-app pricing
+start the application with =>  yarn start/npm start
+npm i styled-components
